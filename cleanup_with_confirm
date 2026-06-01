@@ -1,0 +1,16 @@
+#!/bin/bash
+
+TARGET_DIR="/var/tmp"
+DAYS_OLD=7
+
+echo "Finding files older than $DAYS_OLD days in $TARGET_DIR..."
+find "$TARGET_DIR" -type f -mtime +$DAYS_OLD
+
+read -p "Do you want to delete these files? (y/n): " confirm
+if [ "$confirm" == "y" ]; then
+	find "$TARGET_DIR" -type f -mtime +$DAYS_OLD -exec rm -v {} \;
+	echo "Old files deleted."
+else
+	echo "Aborted."
+fi
+

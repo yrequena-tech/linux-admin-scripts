@@ -21,7 +21,7 @@ Built on Fedora as part of MAC 232 - Unix/Linux coursework at LaGuardia Communit
 ## Security Compliance Checker
 **File:** `security_compliance_checker.py`  
 **Language:** Python 3  
-**Author:** Yesenia Requena | LaGuardia Community College — NSA-Designated CAE-CD Program
+**Author:** Yesenia Requena 
 
 ### Overview
 A Python-based security audit tool that evaluates a Fedora Linux system against 
